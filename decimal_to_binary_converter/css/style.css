@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-image:  url("https://cdn.wallpapersafari.com/55/26/7RPaxe.jpg");
+    background-size: cover;
+  }
+  .container {
+    background-color: #ffffff;
+    width: 80vmin;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.7em;
+    box-shadow: 0 1.2em 2.5em rgba(0, 21, 44, 0.18);
+    transition: 1s;
+  }
+  .container:hover{
+    box-shadow: 10px 20px 20px #000000;
+    background-image: url("https://www.splitshire.com/wp-content/uploads/2014/11/SplitShire-03692-1800x1200.jpg");
+    background-position:center;
+    background-size: cover;
+    transition: 1s;
+  }
+
+  .container:hover h2{
+    color: #ffffff;
+    transition: 1s;
+  }
+  .container:hover .wrapper label{
+    color: #ffffff;
+  }
+  .container:hover .wrapper input{
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  h2 {
+    font-size: 1.8em;
+    color: #0075ff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.3em;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8em;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #050121;
+  }
+  input {
+    position: relative;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1.5px solid #43405c;
+    color: #43405c;
+    outline: none;
+  }
+  input:focus {
+    border-color: #0075ff;
+  }
+  #error-msg {
+    text-align: center;
+    margin-top: 1.25em;
+    color: #ff4362;
+  }
